@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhekshenov Nurel - Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header container">
+    <div class="logo">Nurel Zhekshenov</div>
+
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+
+    <!-- кнопка светлой/тёмной темы -->
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Сменить тему">🌙</button>
+
+    <!-- бургер: виден только на телефоне -->
+    <button class="burger" id="burger" type="button" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+
+  <section class="hero container" id="about">
+    <div class="hero-content">
+      <p class="subtitle">LEARNING WEB DEVELOPMENT</p>
+      <h1 class="hero-title">Hello, my name is Nurel Zhekshenov</h1>
+      <p class="hero-description">
+        I am a student who is learning web development. I enjoy creating simple and clean websites.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-yellow">Projects</a>
+        <a href="https://www.linkedin.com/home/?originalSubdomain=ru" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+    
+    <div class="hero-image-wrapper">
+      <img src="yellow-bg.svg" alt="" class="yellow-shape">
+      <img src="c2b948e6-ddb1-46ad-8b64-2f6750028879.jpg" alt="ЖН" class="hero-img">
+    </div>
+  </section>
+
+  <section class="projects container" id="projects">
+    <h2 class="section-title">Projects</h2>
+
+ 
+    <div class="project-card">
+      <div class="project-info">
+        <h3>Mini portfolio</h3>
+        <p>Это мини порфтолио про меня котрое было сделано на урок Web-design</p>
+        <a href="https://github.com/neithelyn/html1/blob/main/inderx.html" class="btn btn-outline">View Project</a>
+      </div>
+      <div class="project-img">
+        <img src="figma1.png" alt="Project 1">
+      </div>
+    </div>
+
+ 
+    <div class="project-card reverse">
+      <div class="project-info">
+        <h3>Nurel's Club</h3>
+        <p>Этот проект где можно скинуть заявку и пойти на горы(тоже на уроке Веб)</p>
+        <a href="https://github.com/neithelyn/fff" class="btn btn-outline">View Project</a>
+      </div>
+      <div class="project-img">
+        <img src="mount.png" alt="Project 2">
+      </div>
+    </div>
+
+
+    <div class="project-card">
+      <div class="project-info">
+        <h3>Factorial Project</h3>
+        <p>Проект который был написан на Java и просто считывает факториал числа n</p>
+        <a href="https://github.com/neithelyn/assignment4/blob/master/src/task_g.java" class="btn btn-outline">View Project</a>
+      </div>
+      <div class="project-img">
+        <img src="fact1.png" alt="Project 3">
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="contacts container" id="contacts">
+    <h2 class="section-title">Contacts</h2> 
+    
+    <!-- novalidate: проверяет наш JS, а не браузер -->
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="8" required></textarea>
+      </div>
+
+      <div class="form-btn-wrapper">
+        <button type="submit" class="btn btn-yellow">Send</button>
+      </div>
+      <!-- сюда JS пишет ошибку или "спасибо" -->
+      <p class="form-message" id="formMessage"></p>
+    </form>
+  </section>
+
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com"><img src="inst.png" alt="inst"></a>
+      <a href="https://www.linkedin.com/home/?originalSubdomain=ru"><img src="in.png" alt="lin"></a>
+      <a href="https://mail.google.com/mail"><img src="email.png" alt="ema"></a>
+    </div>
+    <p class="copyright">Zhekshenov Nurel 2026</p>
+    
+
+    <!-- жёлтая волна: картинка, экспортированная из Figma -->
+    <div class="footer-wave">
+      <img src="Vector.png" alt="">
+    </div>
+  </footer>
+    <!-- кнопка "наверх": появляется при прокрутке вниз -->
+  <button class="to-top" id="toTop" type="button" aria-label="Наверх">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
